@@ -13,9 +13,15 @@ function buildMainCharacter(characterName, age, preferredPronouns){
 };
 
 function saveReview(newReview, reviews) {
-  reviews.push(newReview);
-  return reviews;
+  for (var i = 0; i <= reviews.length; i++) {
+    if (reviews.indexOf(newReview) === -1) {
+      reviews.push(newReview);
+      return reviews;
+    }
+  }
 }
+
+
 
 module.exports = {
   createTitle,
