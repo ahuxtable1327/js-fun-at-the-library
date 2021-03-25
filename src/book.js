@@ -12,8 +12,9 @@ function buildMainCharacter(characterName, age, preferredPronouns){
   return character;
 };
 
-function saveReview() {
-  var reviews = [];
+function saveReview(newReview, reviews) {
+  reviews.push(newReview);
+  return reviews;
 }
 
 module.exports = {
