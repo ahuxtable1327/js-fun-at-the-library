@@ -24,30 +24,6 @@ function checkoutBook(library, title, genre) {
     }
   } return `Sorry, there are currently no copies of ${title} available at the ${library.name}`
 }
-//
-    // } else {
-    //   library.shelves[genre].splice(genre[i].title,1)
-    // }
-//   }
-// }
-
-
-
-//     } else {
-//     }
-//   }
-// }
-// if ([genre[i]].includes(title)) {
-// if (genre.title !== library.shelves.title){
-// } else {
-
-// library --> shelves --> [book.genre].splice (genre[i].title)
-
-// push a book object into the fantasy
-// shelf array in the shelves object in the library object
-// var genre = [];
-  // for (var i = 0; i < genre.length < i++) {
-  //   genre.push(library.shelves.fantas)
 
 
 module.exports = {
