@@ -11,13 +11,26 @@ function unshelfBook(title, shelf) {
     }
   }
 }
-// sciFiShelf[i].title
 
+function listTitles(shelf) {
+  var titles = [];
+  for (var i = 0; i < shelf.length; i++) {
+    titles.push(shelf[i].title);
+  }
+  return titles.join(", ")
+}
 
+function searchShelf(shelf, isTrue) {
+  var titles = [];
+  for (var i = 0; i < shelf.length; i++) {
+    titles.push(shelf[i].title);
+  }
+  return titles.includes(isTrue);
+}
 
 module.exports = {
   shelfBook,
   unshelfBook,
-  // listTitles,
-  // searchShelf
+  listTitles,
+  searchShelf
 };
